@@ -1,0 +1,49 @@
+/*css document*/
+html, body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page_style {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+.page_style .tool_bar {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 10%;
+}
+.page_style .show_bar {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 90%;
+}
+.page_style .show_bar .map_tree_style {
+  position: relative;
+  float: left;
+  background-color: #cfcfdb;
+  padding: 0px;
+  margin: 0px;
+  width: 20%;
+  height: 100%;
+}
+.page_style .show_bar .map_style {
+  position: relative;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  width: 80%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

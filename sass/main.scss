@@ -1,0 +1,42 @@
+/*css document*/
+@charset "utf-8";
+
+
+@mixin clearDefault ($width, $height) {
+  padding: 0px;
+  margin: 0px;
+  width: $width;
+  height: $height;
+}
+
+html, body {
+  @include clearDefault(100%, 100%);
+  overflow: hidden;
+}
+
+.page_style {
+  position: relative;
+  @include clearDefault(100%, 100%);
+  .tool_bar {
+    position: relative;
+    @include clearDefault(100%, 10%);
+  }
+  .show_bar{
+    position: relative;
+    @include clearDefault(100%, 90%);
+    .map_tree_style {
+      position: relative;
+      float: left;
+      background-color: rgb(207, 207, 219);
+      @include clearDefault(20%, 100%);
+    }
+    .map_style {
+      position: relative;
+      float: left;
+      @include clearDefault(80%, 100%)
+    }
+  }
+}
+
+
+
