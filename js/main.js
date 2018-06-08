@@ -43,8 +43,9 @@ require([
   'require',
   'domReady!',
   'init',
-  'config'
-  ], function($, require, doc, init, config) {
+  'config',
+  'getPosInfo'
+  ], function($, require, doc, init, config, getPosInfo) {
     // 给地图图层列表配置滚动效果
     require([
       'layerScroll'
@@ -77,8 +78,33 @@ require([
         config.fullMap.height, config.fullMap.azimuth, 
         config.fullMap.pitch, config.fullMap.range, 
         config.fullMap.time);
+        // map.flyPosition(120.31791641,31.54163971,0.2,3.6475,-0.71366,26.8669,2);
     });
-    
+
+    $('#position').click(function() {
+      if($(this)[0].checked) {
+        getPosInfo.getPointInfo('model');
+      }else {
+        getPosInfo.cancleGetPoint();
+      }
+    });
+    $('#getLabelInfo').click(function() {
+      var viewState = $('#view')[0].checked;
+      var posState = $('#position')[0].checked;
+      getPosInfo.editLabel(posState, viewState);
+    });
+
+    $('#cancleGet').click(function() {
+      getPosInfo.cancleGetPoint();
+      $('#position')[0].checked = false;
+      $('#view')[0].checked = false;
+    });
+    $('#clearTable').click(function() {
+      var tdArr = $('#resultList').children('td');
+      for(var i = 0; i < tdArr.length; i++) {
+        $(tdArr[i]).html('');
+      }
+    });
     // 生成图层树结构
     require([
       'config',

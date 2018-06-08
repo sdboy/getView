@@ -52,7 +52,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/BC区/BC区一层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/BC1FSXT/model/0.c3s.zip"
               },
               {
                 "name": "BC区02层",
@@ -532,7 +532,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/室外/人工地形/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/SWSXT/model/0.c3s.zip"
               },
               {
                 "name": "建筑",

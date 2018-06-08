@@ -77,15 +77,13 @@ define([
    * 添加标注
    * @method editLabel
    * @author jg
-   * @param { String } operate 操作类型，update为更新，add为添加
    * @param { Boolean } getPosition true时会获取标注位置，false不会获取
    * @param { Boolean } getViewAngle true时会获取视角，false不会获取
    * @return { Null }
    * @date 2018/5/19 21:34
    * @version V1.0.0
    */
-  var editLabel = function (operate, getPosition, getViewAngle) {
-    var data = {};
+  var editLabel = function (getPosition, getViewAngle) {
     if(getViewAngle) {
       var viewAngle = addViewAngle();
       for(var key in viewAngle) {
@@ -110,6 +108,8 @@ define([
     init.map.mapObj.delEvent('FireOnLButtonUp', addPosition);
     labelObj.eventFun = false;
     labelObj.labelType = '';
+    $('#position')[0].checked = false;
+    $('#view')[0].checked = false;
   };
   /**
    * 添加获取坐标点事件
@@ -132,12 +132,20 @@ define([
     labelObj.labelType = type;
   };
 
+  var cancleGetPoint = function() {
+    init.map.mapObj.delEvent('FireOnLButtonUp', addPosition);
+    labelObj.eventFun = false;
+    labelObj.labelType = '';
+    labelObj.position = null;
+  };
+
   return {
     labelObj: labelObj,
     addViewAngle: addViewAngle,
     addPosition: addPosition,
     getPointInfo: getPointInfo,
-    editLabel: editLabel
+    editLabel: editLabel,
+    cancleGetPoint: cancleGetPoint
   };
   
 });

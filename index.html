@@ -17,15 +17,18 @@
       <div class="option_bar" id="optionBar">
         <form class="option_form">
           <label for="view">视点</label>
-          <input type="radio" name="view" id="view" />
+          <input type="checkbox" name="view" id="view" />
           <label for="position">位置</label>
-          <input type="radio" name="position" id="position" />
+          <input type="checkbox" name="position" id="position" />
           <br />
           <input type="button" id="getLabelInfo" value="获取信息"/>
           <input type="button" id="cancleGet" value="取消获取"/>
           <br />
           <input type="button" id="flyPosition" value="飞行定位"/>
           <input type="button" id="operateDom" value="影像显隐"/>
+          <br />
+          <input type="button" id="clearTable" value="清除信息"/>
+
         </form>
       </div>
       <div class="show_param" id="showParam">
@@ -46,7 +49,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr id="resultList">
               <td id="indexCode"></td>
               <td id="viewLon"></td>
               <td id="viewLat"></td>
