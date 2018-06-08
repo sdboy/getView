@@ -3618,10 +3618,24 @@ var Map3D = CooMap.Class.extend({
     operationPtr.AddObserver();                                           //添加观察者
     map.AddOperation(operationPtr);                                       //加入操作并执行
   },
-  //开启模型拾取
-  "pickLineOpen":function (layer){
+  /**
+   * 将图层数组添加到拾取监听中
+   * @method pickLineOpen
+   * @author jg
+   * @param { Array } layers 图层数组
+   * @return { Object } 监听对象
+   * @date 2018/5/19 13:30
+   * @version V1.0.0
+   */
+  "pickLineOpen" : function(layers) {
+    /*jshint maxcomplexity:2 */
     var resp = map.CreateResponserOptions("123");
-    resp.AddConfig("PickLayerIdList", layer.GetLayerID());
+    var ids = '';
+    for(var i = 0; i < layers.length - 1; i++) {
+      ids += layers[i].GetLayerID() + ',';
+    }
+    ids += layers[layers.length-1].GetLayerID();
+    resp.AddConfig("PickLayerIdList", ids);
     resp.AddConfig("PickColor", "1.0,1.0,0.0,0.8");
     resp.AddConfig("IsChangeColor", "true");
     var res = map.CreateResponser("PickModelResponser", resp);
@@ -3629,7 +3643,14 @@ var Map3D = CooMap.Class.extend({
     map.AddResponser(res);
     return res;
   },
-  //关闭模型拾取
+  /**
+   * 关闭模型拾取
+   * @method pickLineClose
+   * @author jg
+   * @return { Null }
+   * @date 2018/5/19 13:32
+   * @version V1.0.0
+   */
   "pickLineClose":function (){
     map.RemoveResponser("PickModelResponser");
   },
@@ -5414,7 +5435,7 @@ var Map3D = CooMap.Class.extend({
     var Adjustment = this.opt.adjustment || "0.01";
     var DragSpeed = this.opt.dragSpeed || "1";
     var resp = map.CreateResponserOptions("AxisEditResponser");
-    resp.AddConfig("PickLayerIdList", layer);
+    resp.AddConfig("PickLayerIdList", Layer);
     // 拾取颜色r g b a
     resp.AddConfig("PickColor", PickColor);
     // 是否变色

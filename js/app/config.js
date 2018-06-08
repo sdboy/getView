@@ -9,9 +9,8 @@
  */
 
  define([
-   'jquery',
-   'zTree'
- ], function() {
+   'layerManage'
+ ], function(layerManage) {
   var cmsLayer = {
     'layers': [],
     'nodes': [
@@ -28,7 +27,7 @@
         "sequenceIdx": 2,
         "children": [
           {
-            "name": "B区",
+            "name": "BC区",
             "checked": false,
             "nocheck": false,
             "isParent": true,
@@ -41,7 +40,7 @@
             "sequenceIdx": 19,
             "children": [
               {
-                "name": "B区01层",
+                "name": "BC区01层",
                 "checked": false,
                 "nocheck": false,
                 "isParent": false,
@@ -52,11 +51,11 @@
                 "regionId": 394,
                 "regionLevel": 1,
                 "sequenceIdx": 0,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/BC区/BC区一层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
-                "name": "B区02层",
+                "name": "BC区02层",
                 "checked": false,
                 "nocheck": false,
                 "isParent": false,
@@ -67,11 +66,11 @@
                 "regionId": 395,
                 "regionLevel": 1,
                 "sequenceIdx": 1,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/BC区/BC区二层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
-                "name": "B区03层",
+                "name": "BC区03层",
                 "checked": false,
                 "nocheck": false,
                 "isParent": false,
@@ -82,11 +81,11 @@
                 "regionId": 396,
                 "regionLevel": 1,
                 "sequenceIdx": 2,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/BC区/BC区三层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
-                "name": "B区04层",
+                "name": "BC区04层",
                 "checked": false,
                 "nocheck": false,
                 "isParent": false,
@@ -97,86 +96,86 @@
                 "regionId": 397,
                 "regionLevel": 1,
                 "sequenceIdx": 3,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/BC区/BC区四层/0.c3s.zip",
                 "cameraUrl": ""
               }
             ]
           },
-          {
-            "name": "C区",
-            "checked": false,
-            "nocheck": false,
-            "isParent": true,
-            "sid": 1657,
-            "indexCode": "32020100002160650790",
-            "controlUnitId": 91,
-            "parentRegionId": 0,
-            "regionId": 391,
-            "regionLevel": 0,
-            "sequenceIdx": 20,
-            "children": [
-              {
-                "name": "C区01层",
-                "checked": false,
-                "nocheck": false,
-                "isParent": false,
-                "sid": 1058,
-                "indexCode": "32020100002160138934",
-                "controlUnitId": 91,
-                "parentRegionId": 391,
-                "regionId": 393,
-                "regionLevel": 1,
-                "sequenceIdx": 0,
-                "modelUrl": "",
-                "cameraUrl": ""
-              },
-              {
-                "name": "C区02层",
-                "checked": false,
-                "nocheck": false,
-                "isParent": false,
-                "sid": 1174,
-                "indexCode": "32020100002160990392",
-                "controlUnitId": 91,
-                "parentRegionId": 391,
-                "regionId": 399,
-                "regionLevel": 1,
-                "sequenceIdx": 1,
-                "modelUrl": "",
-                "cameraUrl": ""
-              },
-              {
-                "name": "C区03层",
-                "checked": false,
-                "nocheck": false,
-                "isParent": false,
-                "sid": 1252,
-                "indexCode": "32020100002160081584",
-                "controlUnitId": 91,
-                "parentRegionId": 391,
-                "regionId": 398,
-                "regionLevel": 1,
-                "sequenceIdx": 2,
-                "modelUrl": "",
-                "cameraUrl": ""
-              },
-              {
-                "name": "C区04层",
-                "checked": false,
-                "nocheck": false,
-                "isParent": false,
-                "sid": 1315,
-                "indexCode": "32020100002160453674",
-                "controlUnitId": 91,
-                "parentRegionId": 391,
-                "regionId": 392,
-                "regionLevel": 1,
-                "sequenceIdx": 3,
-                "modelUrl": "",
-                "cameraUrl": ""
-              }
-            ]
-          },
+          // {
+          //   "name": "C区",
+          //   "checked": false,
+          //   "nocheck": false,
+          //   "isParent": true,
+          //   "sid": 1657,
+          //   "indexCode": "32020100002160650790",
+          //   "controlUnitId": 91,
+          //   "parentRegionId": 0,
+          //   "regionId": 391,
+          //   "regionLevel": 0,
+          //   "sequenceIdx": 20,
+          //   "children": [
+          //     {
+          //       "name": "C区01层",
+          //       "checked": false,
+          //       "nocheck": false,
+          //       "isParent": false,
+          //       "sid": 1058,
+          //       "indexCode": "32020100002160138934",
+          //       "controlUnitId": 91,
+          //       "parentRegionId": 391,
+          //       "regionId": 393,
+          //       "regionLevel": 1,
+          //       "sequenceIdx": 0,
+          //       "modelUrl": "",
+          //       "cameraUrl": ""
+          //     },
+          //     {
+          //       "name": "C区02层",
+          //       "checked": false,
+          //       "nocheck": false,
+          //       "isParent": false,
+          //       "sid": 1174,
+          //       "indexCode": "32020100002160990392",
+          //       "controlUnitId": 91,
+          //       "parentRegionId": 391,
+          //       "regionId": 399,
+          //       "regionLevel": 1,
+          //       "sequenceIdx": 1,
+          //       "modelUrl": "",
+          //       "cameraUrl": ""
+          //     },
+          //     {
+          //       "name": "C区03层",
+          //       "checked": false,
+          //       "nocheck": false,
+          //       "isParent": false,
+          //       "sid": 1252,
+          //       "indexCode": "32020100002160081584",
+          //       "controlUnitId": 91,
+          //       "parentRegionId": 391,
+          //       "regionId": 398,
+          //       "regionLevel": 1,
+          //       "sequenceIdx": 2,
+          //       "modelUrl": "",
+          //       "cameraUrl": ""
+          //     },
+          //     {
+          //       "name": "C区04层",
+          //       "checked": false,
+          //       "nocheck": false,
+          //       "isParent": false,
+          //       "sid": 1315,
+          //       "indexCode": "32020100002160453674",
+          //       "controlUnitId": 91,
+          //       "parentRegionId": 391,
+          //       "regionId": 392,
+          //       "regionLevel": 1,
+          //       "sequenceIdx": 3,
+          //       "modelUrl": "",
+          //       "cameraUrl": ""
+          //     }
+          //   ]
+          // },
           {
             "name": "D栋",
             "checked": false,
@@ -202,7 +201,7 @@
                 "regionId": 305,
                 "regionLevel": 1,
                 "sequenceIdx": 0,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/01层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -217,7 +216,7 @@
                 "regionId": 300,
                 "regionLevel": 1,
                 "sequenceIdx": 1,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/02层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -232,7 +231,7 @@
                 "regionId": 302,
                 "regionLevel": 1,
                 "sequenceIdx": 2,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/03层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -247,7 +246,7 @@
                 "regionId": 355,
                 "regionLevel": 1,
                 "sequenceIdx": 3,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/04层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -262,7 +261,7 @@
                 "regionId": 353,
                 "regionLevel": 1,
                 "sequenceIdx": 4,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/05层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -277,7 +276,7 @@
                 "regionId": 641,
                 "regionLevel": 1,
                 "sequenceIdx": 5,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/06层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -292,7 +291,7 @@
                 "regionId": 364,
                 "regionLevel": 1,
                 "sequenceIdx": 6,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/07层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -307,7 +306,7 @@
                 "regionId": 362,
                 "regionLevel": 1,
                 "sequenceIdx": 7,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/08层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -322,7 +321,7 @@
                 "regionId": 301,
                 "regionLevel": 1,
                 "sequenceIdx": 8,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/09层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -337,7 +336,7 @@
                 "regionId": 295,
                 "regionLevel": 1,
                 "sequenceIdx": 9,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/10层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -352,7 +351,7 @@
                 "regionId": 292,
                 "regionLevel": 1,
                 "sequenceIdx": 10,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/11层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -367,7 +366,7 @@
                 "regionId": 294,
                 "regionLevel": 1,
                 "sequenceIdx": 11,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/12层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -382,7 +381,7 @@
                 "regionId": 299,
                 "regionLevel": 1,
                 "sequenceIdx": 12,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/13层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -397,7 +396,7 @@
                 "regionId": 281,
                 "regionLevel": 1,
                 "sequenceIdx": 13,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/14层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -412,7 +411,7 @@
                 "regionId": 280,
                 "regionLevel": 1,
                 "sequenceIdx": 14,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/15层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -427,7 +426,7 @@
                 "regionId": 288,
                 "regionLevel": 1,
                 "sequenceIdx": 15,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/16层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -442,7 +441,7 @@
                 "regionId": 743,
                 "regionLevel": 1,
                 "sequenceIdx": 16,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/17层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -457,7 +456,7 @@
                 "regionId": 304,
                 "regionLevel": 1,
                 "sequenceIdx": 17,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/18层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -472,7 +471,7 @@
                 "regionId": 365,
                 "regionLevel": 1,
                 "sequenceIdx": 18,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/19层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -487,7 +486,7 @@
                 "regionId": 363,
                 "regionLevel": 1,
                 "sequenceIdx": 19,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/20层/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -502,7 +501,7 @@
                 "regionId": 500,
                 "regionLevel": 1,
                 "sequenceIdx": 20,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/D栋/20层顶/0.c3s.zip",
                 "cameraUrl": ""
               }
             ]
@@ -525,14 +524,14 @@
                 "checked": false,
                 "nocheck": false,
                 "isParent": false,
-                "sid": 1059,
+                "sid": 2059,
                 "indexCode": "32020100002160338980",
                 "controlUnitId": 91,
                 "parentRegionId": 370,
                 "regionId": 394,
                 "regionLevel": 1,
                 "sequenceIdx": 0,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/室外/人工地形/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -540,14 +539,14 @@
                 "checked": false,
                 "nocheck": false,
                 "isParent": false,
-                "sid": 1173,
+                "sid": 1273,
                 "indexCode": "32020100002160259060",
                 "controlUnitId": 91,
                 "parentRegionId": 370,
                 "regionId": 395,
                 "regionLevel": 1,
                 "sequenceIdx": 1,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/室外/外壳/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -555,14 +554,14 @@
                 "checked": false,
                 "nocheck": false,
                 "isParent": false,
-                "sid": 1173,
+                "sid": 1274,
                 "indexCode": "32020100002160259060",
                 "controlUnitId": 91,
                 "parentRegionId": 370,
                 "regionId": 395,
                 "regionLevel": 1,
                 "sequenceIdx": 2,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/室外/绿化/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -570,14 +569,14 @@
                 "checked": false,
                 "nocheck": false,
                 "isParent": false,
-                "sid": 1173,
+                "sid": 1275,
                 "indexCode": "32020100002160259060",
                 "controlUnitId": 91,
                 "parentRegionId": 370,
                 "regionId": 395,
                 "regionLevel": 1,
                 "sequenceIdx": 3,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/室外/小品/0.c3s.zip",
                 "cameraUrl": ""
               }
             ]
@@ -587,7 +586,7 @@
             "checked": false,
             "nocheck": false,
             "isParent": true,
-            "sid": 1650,
+            "sid": 1655,
             "indexCode": "32020100002160387404",
             "controlUnitId": 91,
             "parentRegionId": 0,
@@ -600,14 +599,14 @@
                 "checked": false,
                 "nocheck": false,
                 "isParent": false,
-                "sid": 1059,
+                "sid": 1159,
                 "indexCode": "32020100002160338980",
                 "controlUnitId": 91,
                 "parentRegionId": 370,
                 "regionId": 394,
                 "regionLevel": 1,
                 "sequenceIdx": 0,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/地下室/BC区地下室/0.c3s.zip",
                 "cameraUrl": ""
               },
               {
@@ -615,14 +614,14 @@
                 "checked": false,
                 "nocheck": false,
                 "isParent": false,
-                "sid": 1173,
+                "sid": 1277,
                 "indexCode": "32020100002160259060",
                 "controlUnitId": 91,
                 "parentRegionId": 370,
                 "regionId": 395,
                 "regionLevel": 1,
                 "sequenceIdx": 1,
-                "modelUrl": "",
+                "modelUrl": "bim_server/320200/地下室/D区地下室/0.c3s.zip",
                 "cameraUrl": ""
               }
             ]
@@ -634,19 +633,43 @@
   var util = {
     'licenceIP': '192.168.10.34@9059@',
     'SDKPath': '',
-    'cmsUrl': 'http://localhost:8088/files',
-    'zTreeObj': null
+    'cmsUrl': 'http://192.168.10.194:8088/files',
+    'zTreeObj': null,
+  };
+  var dom = {
+    'domUrl': '/320200/320200/DOM/2018050700',
+    'range': [120.311622619629,31.5372848510742,120.324668884277,31.5486145019531],
+    'minLevel': 0,
+    'maxLevel': 22
+  };
+  var fullMap = {
+    'lon': 120.3192458,
+    'lat': 31.54294968,
+    'height': 60,
+    'azimuth': 4.351113551310101,
+    'pitch': -0.6722756375833641,
+    'range': 300.9511815746299,
+    'time': 3
   };
   // ztree 配置
   var setting = {
     check : {
       enable : true,
       autoCheckTrigger : true
+    },
+    view : {
+      showLine : false
+    },
+    callback : {
+      onCheck : layerManage.showHide,
+      onDblClick : layerManage.flyToLayer
     }
   };
   return {
     cmsLayer: cmsLayer,
     util: util,
+    dom: dom,
+    fullMap: fullMap,
     setting: setting
   }
  });

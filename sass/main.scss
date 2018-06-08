@@ -19,11 +19,30 @@ html, body {
   @include clearDefault(100%, 100%);
   .tool_bar {
     position: relative;
-    @include clearDefault(100%, 10%);
+    @include clearDefault(100%, 15%);
+    .option_bar {
+      position: relative;
+      float: left;
+      background-color: aqua;
+      @include clearDefault(20%, 100% );
+      .option_form {
+        font: 12px arial;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .show_param {
+      position: relative;
+      float: left;
+      background-color: bisque;
+      @include clearDefault(80%, 100% )
+    }
   }
   .show_bar{
     position: relative;
-    @include clearDefault(100%, 90%);
+    @include clearDefault(100%, 85%);
     .map_tree_style {
       position: relative;
       float: left;
@@ -37,6 +56,48 @@ html, body {
     }
   }
 }
+
+.position_info {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: left;
+  background-color: aliceblue;
+  border: none;
+  color: #565;
+  font: 12px arial;
+  caption {
+    font-size: 24px;
+    border-bottom: 2px solid #B3DE94;
+    border-top: 2px solid #B3DE94;
+  }
+  td, th {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: left;
+  }
+  tbody {
+    td, th {
+      background-color: #DFC;
+      border-bottom: 2px solid #B3DE94;
+      border-top: 3px solid #FFFFFF;
+      padding: 9px;
+    }
+  }
+  thead {
+    th {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 19px;
+      padding: 0 8px 2px;
+      text-align:center;
+    }
+  }
+}
+
+
 
 
 

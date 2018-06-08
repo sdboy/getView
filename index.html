@@ -14,7 +14,53 @@
   <div class="page_style" id="page">
     <!-- 顶部功能栏 -->
     <div class="tool_bar" id="toolBar">
-      
+      <div class="option_bar" id="optionBar">
+        <form class="option_form">
+          <label for="view">视点</label>
+          <input type="radio" name="view" id="view" />
+          <label for="position">位置</label>
+          <input type="radio" name="position" id="position" />
+          <br />
+          <input type="button" id="getLabelInfo" value="获取信息"/>
+          <input type="button" id="cancleGet" value="取消获取"/>
+          <br />
+          <input type="button" id="flyPosition" value="飞行定位"/>
+          <input type="button" id="operateDom" value="影像显隐"/>
+        </form>
+      </div>
+      <div class="show_param" id="showParam">
+        <table class="position_info" id="positionInfo">
+          <caption>摄像机坐标信息</caption>
+          <thead>
+            <tr>
+              <th>摄像机编码</th>
+              <th>视点经度</th>
+              <th>视点纬度</th>
+              <th>视点高度</th>
+              <th>旋转角</th>
+              <th>俯仰角</th>
+              <th>可视范围</th>
+              <th>坐标经度</th>
+              <th>坐标纬度</th>
+              <th>坐标高度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="indexCode"></td>
+              <td id="viewLon"></td>
+              <td id="viewLat"></td>
+              <td id="viewHeight"></td>
+              <td id="viewAzimuth"></td>
+              <td id="viewPitch"></td>
+              <td id="viewRange"></td>
+              <td id="labelLon"></td>
+              <td id="labelLat"></td>
+              <td id="labelHeight"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div class="show_bar" id="showBar">
       <!-- 左侧树结构 -->

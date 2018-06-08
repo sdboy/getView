@@ -19,14 +19,39 @@ html, body {
   padding: 0px;
   margin: 0px;
   width: 100%;
-  height: 10%;
+  height: 15%;
+}
+.page_style .tool_bar .option_bar {
+  position: relative;
+  float: left;
+  background-color: aqua;
+  padding: 0px;
+  margin: 0px;
+  width: 20%;
+  height: 100%;
+}
+.page_style .tool_bar .option_bar .option_form {
+  font: 12px arial;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.page_style .tool_bar .show_param {
+  position: relative;
+  float: left;
+  background-color: bisque;
+  padding: 0px;
+  margin: 0px;
+  width: 80%;
+  height: 100%;
 }
 .page_style .show_bar {
   position: relative;
   padding: 0px;
   margin: 0px;
   width: 100%;
-  height: 90%;
+  height: 85%;
 }
 .page_style .show_bar .map_tree_style {
   position: relative;
@@ -44,6 +69,42 @@ html, body {
   margin: 0px;
   width: 80%;
   height: 100%;
+}
+
+.position_info {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: left;
+  background-color: aliceblue;
+  border: none;
+  color: #565;
+  font: 12px arial;
+}
+.position_info caption {
+  font-size: 24px;
+  border-bottom: 2px solid #B3DE94;
+  border-top: 2px solid #B3DE94;
+}
+.position_info td, .position_info th {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: left;
+}
+.position_info tbody td, .position_info tbody th {
+  background-color: #DFC;
+  border-bottom: 2px solid #B3DE94;
+  border-top: 3px solid #FFFFFF;
+  padding: 9px;
+}
+.position_info thead th {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19px;
+  padding: 0 8px 2px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */
