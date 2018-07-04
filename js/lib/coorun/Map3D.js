@@ -2854,17 +2854,17 @@ var Map3D = CooMap.Class.extend({
     // 是否开启接地线
     tSymbol.AddConfig("IsAddGroundLine", "0");
     // 模型原始轴向
-      tSymbol.AddConfig("ModelOriginDir", "0,0,1");
+    tSymbol.AddConfig("ModelOriginDir", "0,0,1");
     // 模型资源路径
-      tSymbol.AddConfig("Url", modelUrl);
+    tSymbol.AddConfig("Url", modelUrl);
     // 资源名称
-      tSymbol.AddConfig("LibraryName", "reslib");
+    tSymbol.AddConfig("LibraryName", "reslib");
     // 创建模型资源，此处必须为ModelSymbol
-      var res = map.CreateResource("ModelSymbol");
+    var res = map.CreateResource("ModelSymbol");
     // 模型资源路径
-      res.AddConfig("Uri", modelUrl);
+    res.AddConfig("Uri", modelUrl);
     // 创建资源库，名称和图层配置LibraryName设置的名称对应
-      var reslib = map.CreateResourceLibrary("reslib");
+    var reslib = map.CreateResourceLibrary("reslib");
     // 将资源添加至资源库
     reslib.AddResource(res);
     // 创建名称为Point的样式，名称任意
@@ -2917,7 +2917,7 @@ var Map3D = CooMap.Class.extend({
     // 抬升高度，任意值
     tlo.AddConfig("LiftUp", "0");
     // 最大显示范围，大于最小显示范围-无穷大
-      tlo.AddConfig("MaxRange", "1000000.0");
+    tlo.AddConfig("MaxRange", "1000000.0");
     // 最小显示范围，0-无穷大
     tlo.AddConfig("MinRange", "0.0");
     // 将样式表配置添加至图层配置对象，第一参必须为StyleSheet字符串
@@ -2937,7 +2937,7 @@ var Map3D = CooMap.Class.extend({
     var id = shpLayer.GetLayerID();
     // 获取矢量图层
     var editLayer = map.GetFeatureModelLayer(id);
-      return shpLayer;
+    return shpLayer;
   },
   /**
    * <p>符号化模型添加</p>
@@ -2984,14 +2984,14 @@ var Map3D = CooMap.Class.extend({
     // 添加属性值(1:int; 2:long; 3:float; 4:double; 5:string; 6:bool)
     addFeature.AddAttribute("Name", modelID, 5);
     addFeature.AddAttribute("XScale", xScale, 3);
-      addFeature.AddAttribute("YScale", yScale, 3);
+    addFeature.AddAttribute("YScale", yScale, 3);
     addFeature.AddAttribute("ZScale", zScale, 3);
     addFeature.AddAttribute("Yaw", yaw, 3);
     addFeature.AddAttribute("Roll", roll, 3);
     addFeature.AddAttribute("Pitch", pitch, 3);
     addFeature.AddAttribute("lon", Lon, 5);
     addFeature.AddAttribute("lat", Lat, 5);
-      addFeature.AddAttribute("height", Height, 5);
+    addFeature.AddAttribute("height", Height, 5);
     // 获取矢量图层要素最大ID
     var featureId = editLayer.GetMaxFeatureID();
     // 设置FeatureID
@@ -3048,14 +3048,14 @@ var Map3D = CooMap.Class.extend({
     // 添加属性值(1:int; 2:long; 3:float; 4:double; 5:string; 6:bool)
     addFeature.AddAttribute("Name", ModelID, 5);
     addFeature.AddAttribute("XScale", XScale, 3);
-      addFeature.AddAttribute("YScale", YScale, 3);
+    addFeature.AddAttribute("YScale", YScale, 3);
     addFeature.AddAttribute("ZScale", ZScale, 3);
     addFeature.AddAttribute("Yaw", Yaw, 3);
     addFeature.AddAttribute("Pitch", Pitch, 3);
     addFeature.AddAttribute("Roll", Roll, 3);
     addFeature.AddAttribute("lon", Lon, 5);
     addFeature.AddAttribute("lat", Lat, 5);
-      addFeature.AddAttribute("height", Height, 5);
+    addFeature.AddAttribute("height", Height, 5);
     var featureId = editLayer.GetMaxFeatureID();
     addFeature.SetFeatureId(featureId + 1);
     editLayer.UpdateFeatureByNew(Feature, addFeature);

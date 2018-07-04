@@ -52,7 +52,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/BC区/BC区一层/0.c3s.zip",
-                "cameraUrl": "camera/BC1FSXT/model/0.c3s.zip"
+                "cameraUrl": "camera/BC1F监控/model/0.c3s.zip"
               },
               {
                 "name": "BC区02层",
@@ -67,7 +67,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 1,
                 "modelUrl": "bim_server/320200/BC区/BC区二层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/BC2F监控/model/0.c3s.zip"
               },
               {
                 "name": "BC区03层",
@@ -82,7 +82,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 2,
                 "modelUrl": "bim_server/320200/BC区/BC区三层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/BC3F监控/model/0.c3s.zip"
               },
               {
                 "name": "BC区04层",
@@ -97,7 +97,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 3,
                 "modelUrl": "bim_server/320200/BC区/BC区四层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/BC4F监控/model/0.c3s.zip"
               }
             ]
           },
@@ -202,7 +202,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/D栋/01层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区1F监控/model/0.c3s.zip"
               },
               {
                 "name": "02层",
@@ -217,7 +217,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 1,
                 "modelUrl": "bim_server/320200/D栋/02层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区2F监控/model/0.c3s.zip"
               },
               {
                 "name": "03层",
@@ -232,7 +232,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 2,
                 "modelUrl": "bim_server/320200/D栋/03层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区3F监控/model/0.c3s.zip"
               },
               {
                 "name": "04层",
@@ -247,7 +247,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 3,
                 "modelUrl": "bim_server/320200/D栋/04层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区4F监控/model/0.c3s.zip"
               },
               {
                 "name": "05层",
@@ -262,7 +262,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 4,
                 "modelUrl": "bim_server/320200/D栋/05层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区5F监控/model/0.c3s.zip"
               },
               {
                 "name": "06层",
@@ -277,7 +277,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 5,
                 "modelUrl": "bim_server/320200/D栋/06层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区6F监控/model/0.c3s.zip"
               },
               {
                 "name": "07层",
@@ -292,7 +292,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 6,
                 "modelUrl": "bim_server/320200/D栋/07层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区7F监控/model/0.c3s.zip"
               },
               {
                 "name": "08层",
@@ -307,7 +307,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 7,
                 "modelUrl": "bim_server/320200/D栋/08层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区8F监控/model/0.c3s.zip"
               },
               {
                 "name": "09层",
@@ -322,7 +322,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 8,
                 "modelUrl": "bim_server/320200/D栋/09层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区9F监控/model/0.c3s.zip"
               },
               {
                 "name": "10层",
@@ -337,7 +337,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 9,
                 "modelUrl": "bim_server/320200/D栋/10层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区10F监控/model/0.c3s.zip"
               },
               {
                 "name": "11层",
@@ -352,7 +352,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 10,
                 "modelUrl": "bim_server/320200/D栋/11层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区11F监控/model/0.c3s.zip"
               },
               {
                 "name": "12层",
@@ -367,7 +367,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 11,
                 "modelUrl": "bim_server/320200/D栋/12层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区12F监控/model/0.c3s.zip"
               },
               {
                 "name": "13层",
@@ -382,7 +382,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 12,
                 "modelUrl": "bim_server/320200/D栋/13层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区13F监控/model/0.c3s.zip"
               },
               {
                 "name": "14层",
@@ -397,7 +397,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 13,
                 "modelUrl": "bim_server/320200/D栋/14层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区14F监控/model/0.c3s.zip"
               },
               {
                 "name": "15层",
@@ -412,7 +412,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 14,
                 "modelUrl": "bim_server/320200/D栋/15层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区15F监控/model/0.c3s.zip"
               },
               {
                 "name": "16层",
@@ -427,7 +427,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 15,
                 "modelUrl": "bim_server/320200/D栋/16层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区16F监控/model/0.c3s.zip"
               },
               {
                 "name": "17层",
@@ -442,7 +442,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 16,
                 "modelUrl": "bim_server/320200/D栋/17层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区17F监控/model/0.c3s.zip"
               },
               {
                 "name": "18层",
@@ -457,7 +457,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 17,
                 "modelUrl": "bim_server/320200/D栋/18层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区18F监控/model/0.c3s.zip"
               },
               {
                 "name": "19层",
@@ -472,7 +472,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 18,
                 "modelUrl": "bim_server/320200/D栋/19层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区19F监控/model/0.c3s.zip"
               },
               {
                 "name": "20层",
@@ -487,7 +487,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 19,
                 "modelUrl": "bim_server/320200/D栋/20层/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区20F监控/model/0.c3s.zip"
               },
               {
                 "name": "20顶层",
@@ -502,7 +502,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 20,
                 "modelUrl": "bim_server/320200/D栋/20层顶/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区地下室监控/model/0.c3s.zip"
               }
             ]
           },
@@ -532,7 +532,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/室外/人工地形/0.c3s.zip",
-                "cameraUrl": "camera/SWSXT/model/0.c3s.zip"
+                "cameraUrl": "camera/室外监控/model/0.c3s.zip"
               },
               {
                 "name": "建筑",
@@ -607,7 +607,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/地下室/BC区地下室/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/ABC地下室监控/model/0.c3s.zip"
               },
               {
                 "name": "D区地下室",
@@ -622,7 +622,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 1,
                 "modelUrl": "bim_server/320200/地下室/D区地下室/0.c3s.zip",
-                "cameraUrl": ""
+                "cameraUrl": "camera/D区地下室监控/model/0.c3s.zip"
               }
             ]
           },
