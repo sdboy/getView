@@ -712,7 +712,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/A区/A区01楼/0.c3s.zip",
-                "cameraUrl": "camera/A区1F监控/0.c3s.zip"
+                "cameraUrl": "camera/A区1F监控/model/0.c3s.zip"
               },
               {
                 "name": "A区02楼",
@@ -727,7 +727,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/A区/A区02楼/0.c3s.zip",
-                "cameraUrl": "camera/A区2F监控/0.c3s.zip"
+                "cameraUrl": "camera/A区2F监控/model/0.c3s.zip"
               },
               {
                 "name": "A区03楼",
@@ -742,7 +742,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/A区/A区03楼/0.c3s.zip",
-                "cameraUrl": "camera/A区3F监控/0.c3s.zip"
+                "cameraUrl": "camera/A区3F监控/model/0.c3s.zip"
               },
               {
                 "name": "A区04楼",
@@ -757,7 +757,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/A区/A区04楼/0.c3s.zip",
-                "cameraUrl": "camera/A区4F监控/0.c3s.zip"
+                "cameraUrl": "camera/A区4F监控/model/0.c3s.zip"
               },
               {
                 "name": "A区05楼",
@@ -772,7 +772,7 @@
                 "regionLevel": 1,
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/A区/A区05楼/0.c3s.zip",
-                "cameraUrl": "camera/A区5F监控/0.c3s.zip"
+                "cameraUrl": "camera/A区5F监控/model/0.c3s.zip"
               },
             ]
           },
@@ -833,7 +833,22 @@
                 "sequenceIdx": 0,
                 "modelUrl": "bim_server/320200/地下室/G区-2楼/0.c3s.zip",
                 "cameraUrl": "camera/G区-2F监控/0.c3s.zip"
-              }
+              },
+              {
+                "name": "F区地下室",
+                "checked": false,
+                "nocheck": false,
+                "isParent": false,
+                "sid": 1163,
+                "indexCode": "32020100002160338980",
+                "controlUnitId": 91,
+                "parentRegionId": 370,
+                "regionId": 394,
+                "regionLevel": 1,
+                "sequenceIdx": 0,
+                "modelUrl": "bim_server/320200/地下室/F区地下室/0.c3s.zip",
+                "cameraUrl": "camera/F区地下室监控/model/0.c3s.zip"
+              },
               // {
               //   "name": "D区地下室",
               //   "checked": false,
@@ -1000,7 +1015,66 @@
                 "cameraUrl": "camera/X区12层监控/0.c3s.zip"
               },
             ]
-          }
+          },
+          {
+            "name": "F区",
+            "checked": false,
+            "nocheck": false,
+            "isParent": true,
+            "sid": 4655,
+            "indexCode": "32020100002160387404",
+            "controlUnitId": 91,
+            "parentRegionId": 0,
+            "regionId": 370,
+            "regionLevel": 0,
+            "sequenceIdx": 19,
+            "children": [
+              {
+                "name": "F区01楼",
+                "checked": false,
+                "nocheck": false,
+                "isParent": false,
+                "sid": 4704,
+                "indexCode": "32020100002160338980",
+                "controlUnitId": 91,
+                "parentRegionId": 370,
+                "regionId": 394,
+                "regionLevel": 1,
+                "sequenceIdx": 0,
+                "modelUrl": "bim_server/320200/F区/F区01楼/0.c3s.zip",
+                "cameraUrl": "camera/F区1F监控/0.c3s.zip"
+              },
+              {
+                "name": "F区02楼",
+                "checked": false,
+                "nocheck": false,
+                "isParent": false,
+                "sid": 4705,
+                "indexCode": "32020100002160338980",
+                "controlUnitId": 91,
+                "parentRegionId": 370,
+                "regionId": 394,
+                "regionLevel": 1,
+                "sequenceIdx": 0,
+                "modelUrl": "bim_server/320200/F区/F区02楼/0.c3s.zip",
+                "cameraUrl": "camera/F区2F监控/0.c3s.zip"
+              },
+              {
+                "name": "F区03楼",
+                "checked": false,
+                "nocheck": false,
+                "isParent": false,
+                "sid": 4706,
+                "indexCode": "32020100002160338980",
+                "controlUnitId": 91,
+                "parentRegionId": 370,
+                "regionId": 394,
+                "regionLevel": 1,
+                "sequenceIdx": 0,
+                "modelUrl": "bim_server/320200/F区/F区03楼/0.c3s.zip",
+                "cameraUrl": "camera/F区3F监控/0.c3s.zip"
+              },
+            ]
         ]
       }
     ]
